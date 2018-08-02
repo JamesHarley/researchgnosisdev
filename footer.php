@@ -8,9 +8,9 @@
 
 		</div>
 		<!-- /wrapper -->
-
+		</div> 
 		<?php wp_footer(); ?>
-		</div>
+		
 		<div id="TheFoot">
 			Gnosis - the knowledge gained from experience, <br /> not theory or estimation
 			<p>
