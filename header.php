@@ -35,7 +35,7 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/img/triskal_white.png" class="App-logo" alt="logo" />
 		</a>
 		<br />
-        <h1 class=""> <p>Gnosis Development</p></h1>
+        <h1 class="gnostic-menu"> <p>Gnosis Development</p></h1>
         </header>
        
         <div class="App-intro">
@@ -45,8 +45,6 @@
           <div class="boxed-inner">
 			<!-- nav -->
 			<nav class="gnostic-menu">
-				<ul class="nav">
 					<?php html5blank_nav(); ?>
-				</ul>
 			</nav>
 			<!-- /nav -->
