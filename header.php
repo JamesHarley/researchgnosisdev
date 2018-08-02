@@ -31,9 +31,11 @@
 			<!-- header -->
 			      <div class="App">
         <header class="App-header">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/triskal_white.png" class="App-logo" alt="logo" />
-          <br />
-          <h1 class=""> <p>Gnosis Development</p></h1>
+		<a href="<?php echo home_url(); ?>"> 
+			<img src="<?php echo get_template_directory_uri(); ?>/img/triskal_white.png" class="App-logo" alt="logo" />
+		</a>
+		<br />
+        <h1 class=""> <p>Gnosis Development</p></h1>
         </header>
        
         <div class="App-intro">
@@ -41,21 +43,10 @@
         <div class="boxed" >
         <Naver />
           <div class="boxed-inner">
-        <!--  
-			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+			<!-- nav -->
+			<nav class="gnostic-menu">
+				<ul class="nav">
+					<?php html5blank_nav(); ?>
+				</ul>
+			</nav>
+			<!-- /nav -->
