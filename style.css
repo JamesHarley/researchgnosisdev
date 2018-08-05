@@ -603,3 +603,25 @@ to   { opacity: 1; }
    max-width:700px;
   
 }
+.wp-block-code{
+  background: #FFF;
+  padding:20px;
+}
+main{
+  float:left;
+  margin-top:30px;
+  padding-left:20px;
+  padding-right:20px;
+  margin-right:40px;
+  margin-bottom: 30px;
+  max-width: 70%;
+  background: rgb(53, 53, 53);
+}
+.sidebar{
+  margin-top: 30px;
+  margin-left:50px;
+  padding-right:20px;
+}
+.footer{
+  clear:both
+}
