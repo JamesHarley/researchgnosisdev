@@ -9,10 +9,10 @@
 		</div>
 		<!-- /wrapper -->
 		</div> 
-		<?php wp_footer(); ?>
+		
 		
 		<div id="TheFoot">
-			Gnosis - the knowledge gained from experience, <br /> not theory or estimation
+		<a href="https://gnosisdevelopment.com" >Gnosis </a>- the knowledge gained from experience, <br /> not theory or estimation
 			<p>
 				<a href="https://github.com/JamesHarley" target="_blank"><i class="fab fa-github-square"></i> GitHub </a>    
 				<a href="https://play.google.com/store/apps/developer?id=Gnosis+Development" target="_blank"><i class="fab fa-google-play"></i> GooglePlay </a>  
@@ -27,9 +27,9 @@
 		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
 		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
+		ga('create', 'UA-123422307-1', 'research.gnosisdevelopment.com');
 		ga('send', 'pageview');
 		</script>
-
+		<?php wp_footer(); ?>
 	</body>
 </html>

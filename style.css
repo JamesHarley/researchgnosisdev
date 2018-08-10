@@ -312,7 +312,9 @@ a img.aligncenter {
 	}
 }
 .App {
-  min-width:500px;
+  
+  max-width: 1000px;
+  /**min-width:500px;**/
   text-align: center;
   height: 100%;
   margin-left:auto;
@@ -331,7 +333,7 @@ a img.aligncenter {
 
 .App-header {
   text-shadow: 0.2rem .2rem .3rem darkblue; 
-  width:500px;
+  max-width:500px;
   padding: 20px;
   color: white;
   margin-left:auto;
@@ -387,7 +389,7 @@ h1{
 }
 .boxed{
   opacity: .95;
-  min-width:500px;
+  /**min-width:500px;**/
   width:100%;
   background:url('./img/bg.png');
   box-shadow: inset 0 0 5rem rgba(4, 20, 39, 0.9);
@@ -411,7 +413,7 @@ h1{
 
 
 .gnostic-menu{
-  width:500px;
+  max-width:500px;
   margin-left:auto;
   margin-right:auto;
 } 
@@ -609,19 +611,64 @@ to   { opacity: 1; }
 }
 main{
   float:left;
+
   margin-top:30px;
   padding-left:20px;
   padding-right:20px;
-  margin-right:40px;
+  margin-right:20px;
   margin-bottom: 30px;
-  max-width: 70%;
-  background: rgb(53, 53, 53);
+  max-width: 700px;
 }
 .sidebar{
+  float: left;
+  width:150px;
   margin-top: 30px;
-  margin-left:50px;
+  margin-left:10px;
   padding-right:20px;
 }
 .footer{
   clear:both
+}
+textarea{
+  width:180px;
+}
+.sidebar .search input{
+  background:#333;
+  width:85px;
+  float: left;
+}
+.sidebar .search button{
+  background:#333;
+  float: left;
+}
+.sidebar .search {
+  margin-bottom:20px;
+}
+.sidebar-widget li{
+  margin:none;
+  padding:none;
+}
+.form-group{
+  width:155px;
+}
+article{
+  -moz-outline-radius: 5px;
+  background: rgb(53, 53, 53);
+  margin-top: 15px;
+  margin-bottom:15px;
+  border: solid  rgb(35, 130, 255) thin;
+  padding:15px;
+  box-shadow: -1px 1px 55px rgba(0, 53, 114, 0.8);
+}
+.sidebar-widget ul{
+  margin-top:15px;
+  margin-bottom:15px;
+  list-style: none;
+  padding:0;
+}
+.clr{
+  clear: both;
+}
+.sidebar-widget{
+  margin-top:20px;
 }
