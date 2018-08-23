@@ -313,7 +313,7 @@ a img.aligncenter {
 }
 .App {
   
-  max-width: 1000px;
+  max-width: 1200px;
   /**min-width:500px;**/
   text-align: center;
   height: 100%;
@@ -391,34 +391,34 @@ h1{
   opacity: .95;
   /**min-width:500px;**/
   width:100%;
-  background:url('./img/bg.png');
-  box-shadow: inset 0 0 5rem rgba(4, 20, 39, 0.9);
-  margin-top: 1px;
+  background: linear-gradient( rgba(4, 20, 39, 0.8),rgba(4, 20, 39, 0.9));
   height:100%;
   position:relative;
+  padding-bottom:60px;
+}
+
+
+.boxed-inner{
+  clear: both;
+  box-shadow: inset 0 0 5rem rgba(4, 20, 39, 0.9);
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 4s; /* Firefox < 16 */
   -ms-animation: fadein 4s; /* Internet Explorer */
   -o-animation: fadein 4s; /* Opera < 12.1 */
     animation: fadein 4s;
-}
-
-
-.boxed-inner{
-  padding:30px;
-  text-align: justify;
-
+  margin-top: 0px;
+  text-align: left;
 }
 
 
 
 .gnostic-menu{
-  max-width:500px;
   margin-left:auto;
   margin-right:auto;
+  margin-top:-30px;
+  margin-bottom:10px;
 } 
 .nav{
-  min-width:500px;
   font-size: 1.3em;
   text-align:center;
   color:#399dd6;
@@ -432,13 +432,14 @@ h1{
   font-size: 1em;
   color:#399dd6;
   list-style: none;
+  background: rgb(53, 53, 53);
 }
 .nav-item a{
   font-size: 1em;
   color:#399dd6;
   text-decoration: none;
 }
-.nav-item a:hover{
+.nav-link:hover{
   text-align:center;
   text-shadow: 1px 1px 2px black, 0 0 10px rgb(35, 130, 255), 0 0 5px darkblue;
   text-decoration: none;
@@ -451,21 +452,30 @@ h1{
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.568);
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 } 
+.navbar-toggler{
+  border:none;
+}
+.toggle-style{
+  color:#2879a6;
+  float:right;
+  background: linear-gradient( rgba(4, 20, 39, 0.8),rgba(4, 20, 39, 0.9));
+
+  padding:15px;
+}
 .nav-link {
   float:left;
   width:150px;
   display: block;
   padding: .5rem 1rem;
   text-shadow: 0.2rem 0.2rem 0.3rem rgba(0,0,0,.863);
+  background: linear-gradient( rgba(4, 20, 39, 0.8),rgba(4, 20, 39, 0.9));
+  border: solid  rgb(35, 130, 255) thin;
+  padding:15px;
+  box-shadow: -1px 1px 55px rgba(0, 53, 114, 0.8);
 }
 
 
 
-#Contact,#Home, #Portfolio, #Services{
-  max-width:800px;
-  margin-left:auto;
-  margin-right:auto;
-}
 .btn-primary{
   background-color:#2879a6
 }
@@ -490,38 +500,8 @@ h1{
 .powered{
   margin-top:15px;
 }
-.service-icons{
-  min-width:300px;
-  font-size:2em;
-  text-align: center;
-  margin-left:auto;
-  margin-right:auto;
-
-}
-.service-icons i{
-   margin:10px;
-}
 
 
-
-
-.cog i {
-  display: block;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  top: 30px;
-  left: 30px;
-  background: url('./img/gear.png');
-  -webkit-animation: barrelRoll 2s infinite linear;
-  -webkit-animation-play-state: paused;
-}
-
-.cog i:last-of-type {
-  top: 22px;
-  left: 56px;
-  -webkit-animation-name: invertBarrelRoll;
-}
 
  div:hover > i {
   -webkit-animation-play-state: running;
@@ -610,21 +590,21 @@ to   { opacity: 1; }
   padding:20px;
 }
 main{
-  float:left;
-
+ /**
   margin-top:30px;
   padding-left:20px;
   padding-right:20px;
   margin-right:20px;
-  margin-bottom: 30px;
-  max-width: 700px;
+  margin-bottom: 30px;**/
 }
 .sidebar{
+  /**
   float: left;
   width:150px;
   margin-top: 30px;
   margin-left:10px;
   padding-right:20px;
+  **/
 }
 .footer{
   clear:both
@@ -633,13 +613,19 @@ textarea{
   width:180px;
 }
 .sidebar .search input{
-  background:#333;
-  width:85px;
+  background:rgb(34, 34, 34);
+  width:120px;
   float: left;
+  margin-left:20px;
+  color:white;
+  border: solid  rgb(35, 130, 255) thin;
 }
 .sidebar .search button{
   background:#333;
   float: left;
+  padding-left:7px;
+  padding-right:7px;
+  margin-left:10px;
 }
 .sidebar .search {
   margin-bottom:20px;
@@ -648,8 +634,45 @@ textarea{
   margin:none;
   padding:none;
 }
+
+.sidebar-widget li  {
+  box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+  opacity: .95;
+  background: rgb(53, 53, 53);
+  list-style: none;
+  border: solid  rgb(35, 130, 255) thin;
+  padding:10px;
+  text-align: left;  
+  transition: all .5s ease-in-out;
+ }
+  
+ .sidebar-widget li:hover{
+  transform: scale(1.1);
+  z-index: 999;
+  text-decoration: none;
+  
+}
+.sidebar-widget  a{
+ }
+
+a:hover{
+  text-decoration: none;
+}
+ .sidebar-widget   a:visited{
+  color:#6f6;
+ }
+.sidebar h3{
+  text-align: center;
+  border-bottom: solid thin #fff;
+}
+#wp-calendar{
+  margin-left:auto;
+  margin-right: auto;
+}
+ .widget_categories li{
+
+ }
 .form-group{
-  width:155px;
 }
 article{
   -moz-outline-radius: 5px;
@@ -667,8 +690,12 @@ article{
   padding:0;
 }
 .clr{
-  clear: both;
+ clear:both
 }
 .sidebar-widget{
   margin-top:20px;
+}
+header a, header a:hover, header a:focus  {color:white; text-decoration: none}
+.blog-main{
+  text-align: left;
 }
